@@ -31,11 +31,11 @@ app.post("/",function(req,res){
   };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us11.api.mailchimp.com/3.0/lists/15d848cfc2";
+  const url = "https://us.api.mailchimp.com/3.0/lists/15d848cfc2";
 
   const options = {
     method: "POST",
-    auth: "aditya:4c5774dc504d12033e09949bae7c7874-us11"
+    auth: "      "
   }
 
   const request = https.request(url, options, function(response){
@@ -66,8 +66,4 @@ app.post("/failure",function(req,res){
 })
 
 
-// API key
-//  4c5774dc504d12033e09949bae7c7874-us11
 
-// Audience id
-//  15d848cfc2
